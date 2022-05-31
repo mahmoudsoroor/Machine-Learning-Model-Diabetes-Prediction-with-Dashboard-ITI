@@ -1,0 +1,48 @@
+{% extends "hometemplate.html" %}
+
+{% set active_page = "home" %}
+
+{% block content %}
+    <div id="jumbotron" style="background-color:#212257; background-size: auto 100%; background-repeat: no-repeat;">
+        <div class="container fadeIn bg-transparent">
+            <br>
+            <h4 class="display-3" style="text-align:center;color:#FFFFFF">Machine Learning Diabetes Prediction</h4>
+
+        </div>
+    </div>
+<div style="background-color:#212257">
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>   
+
+
+    
+        <div style ="width:100%;text-align:center">
+                    <div style="width: 50%; height: 100px; float: left;">
+                        <h2 style="color:#FFFFFF">Make a prediction</h2>
+                        <p style="color:#FFFFFF"> Make a prediction using machine learning model. </p>
+                        <p><a class="btn btn-secondary" href="{{ url_for('diagnose') }}" role="button">Prediction</a></p>
+                    </div>
+
+                    <div style="margin_left:50%">
+                        <h2 style="color:#FFFFFF">Explore the data</h2>
+                        <p style="color:#FFFFFF">View the data used to train the model, understand this data</p>
+                        <p><a class="btn btn-secondary" href="{{ url_for('/dashapp/') }}" role="button">DashBoard</a></p>
+                    </div>
+        
+            
+        </div>
+</div>    
+{% endblock %}
